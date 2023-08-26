@@ -16,7 +16,7 @@ st.set_page_config(page_title="🤖 🧠 💬 Ravansha")
 # login to profile
 with st.sidebar:
     st.title("🙍‍♂️ 🧠 🤖 Ravansha")
-    img = Image.open('ravan.jpg')
+    img = Image.open('ravansha1.png')
     st.image(img) 
     f =st.text_area('send me feedback')
     s = st.button('send')
