@@ -18,11 +18,16 @@ with st.sidebar:
     st.title("🙍‍♂️ 🧠 🤖 Ravansha")
     img = Image.open('ravan.jpg')
     st.image(img) 
+    f =st.text_area('send me feedback')
+    s = st.button('send')
+    if s :
+       print(f)
+    st.write('Telegram bot feedback')
+    st.write('https://t.me/TheYeChiziBegoBot?start=BONn99kt1b')
     st.markdown(intro())
-
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [
-        {"role": "assistant", "content": "سلام به روانشا خوش آمدید☺️"}
+        {"role": "assistant", "content": "Welcome to Ravansha ☺️"}
     ]
 if "buffer_memory" not in st.session_state:
     st.session_state.buffer_memory = ConversationBufferWindowMemory(
