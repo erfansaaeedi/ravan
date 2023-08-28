@@ -13,8 +13,7 @@ os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 key=os.environ["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="🤖 🧠 💬 Ravansha")
-st.write('privacy policy:')
-st.write('https://www.privacypolicies.com/live/76f7352c-3ee9-496a-ada9-07dbf8c975d8')
+
 # login to profile
 with st.sidebar:
     st.title("🙍‍♂️ 🧠 🤖 Ravansha")
@@ -22,6 +21,8 @@ with st.sidebar:
     st.image(img) 
     f =st.text_area('send me feedback')
     s = st.button('send')
+    st.write('privacy policy:')
+    st.write('https://www.privacypolicies.com/live/76f7352c-3ee9-496a-ada9-07dbf8c975d8')
     if s :
        print(f)
     st.write('Telegram bot feedback')
